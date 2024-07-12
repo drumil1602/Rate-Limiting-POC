@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  in-memory-rate-limiting:
+    image: drumil123/in-memory-rate-limiting:latest
+    container_name: in-memory-rate-limiting
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    command: ["java", "-jar", "/app/in-memory-rate-limiting.jar"]
