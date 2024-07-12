@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: rate-limit-redis
+    ports:
+      - "6379:6379"
+  cluster-level-rate-limiting:
+#    image: drumil123/cluster-level-rate-limiting:latest
+    container_name: cluster-level-rate-limiting
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9000:9000"
+    command: ["java", "-jar", "/app/cluster-level-rate-limiting.jar"]
+    depends_on:
+      - redis

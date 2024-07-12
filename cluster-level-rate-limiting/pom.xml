@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rate-limiter</groupId>
-	<artifactId>server-level</artifactId>
+	<artifactId>cluster-level</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>server-level</name>
 	<description>Demo project for Spring Boot</description>
