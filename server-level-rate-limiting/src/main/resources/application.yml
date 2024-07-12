@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: cluster-level-rate-limiting
+server:
+  port: 9000
