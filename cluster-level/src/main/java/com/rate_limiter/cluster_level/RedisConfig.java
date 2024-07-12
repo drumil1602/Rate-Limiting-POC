@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 public class RedisConfig {
     private RedisClient redisClient() {
         return RedisClient.create(RedisURI.builder()
-                .withHost("rate-limit-redis")
+                .withHost("localhost")
                 .withPort(6379)
                 .withSsl(false)
                 .build());
