@@ -1,7 +1,4 @@
-package com.rate_limiter.server_level;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+package com.rate_limiter.cluster_level;
 
 //@SpringBootTest
 class ServerLevelApplicationTests {

@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/cluster-level-rate-limiting-0.0.1-SNAPSHOT.jar /app/cluster-level-rate-limiting.jar
 
 # Expose port 8080 to the outside world
-EXPOSE 9000
+EXPOSE 8080
 
 # Run the Spring Boot application
 ENTRYPOINT ["java", "-jar", "/app/cluster-level-rate-limiting.jar"]

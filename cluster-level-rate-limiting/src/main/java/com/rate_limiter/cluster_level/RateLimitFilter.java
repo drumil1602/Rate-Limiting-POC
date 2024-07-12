@@ -1,4 +1,4 @@
-package com.rate_limiter.server_level;
+package com.rate_limiter.cluster_level;
 
 import io.github.bucket4j.Bucket;
 import io.github.bucket4j.BucketConfiguration;

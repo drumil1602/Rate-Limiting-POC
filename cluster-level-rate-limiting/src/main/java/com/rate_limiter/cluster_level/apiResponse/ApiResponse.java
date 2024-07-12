@@ -1,4 +1,4 @@
-package com.rate_limiter.server_level.apiResponse;
+package com.rate_limiter.cluster_level.apiResponse;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

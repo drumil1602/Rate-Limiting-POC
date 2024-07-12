@@ -1,6 +1,6 @@
-package com.rate_limiter.server_level.service.impl;
+package com.rate_limiter.cluster_level.service.impl;
 
-import com.rate_limiter.server_level.service.SampleService;
+import com.rate_limiter.cluster_level.service.SampleService;
 import org.springframework.stereotype.Service;
 
 @Service

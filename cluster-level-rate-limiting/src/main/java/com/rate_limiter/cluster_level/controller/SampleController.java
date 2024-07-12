@@ -1,7 +1,7 @@
-package com.rate_limiter.server_level.controller;
+package com.rate_limiter.cluster_level.controller;
 
-import com.rate_limiter.server_level.apiResponse.ApiResponse;
-import com.rate_limiter.server_level.service.SampleService;
+import com.rate_limiter.cluster_level.apiResponse.ApiResponse;
+import com.rate_limiter.cluster_level.service.SampleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

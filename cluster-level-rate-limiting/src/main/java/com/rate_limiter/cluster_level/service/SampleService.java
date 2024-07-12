@@ -1,4 +1,4 @@
-package com.rate_limiter.server_level.service;
+package com.rate_limiter.cluster_level.service;
 
 public interface SampleService {
     String first();
