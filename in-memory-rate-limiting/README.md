@@ -24,7 +24,7 @@ Follow these steps to set up the project:
 1. Clone the repository:
    ```bash
    git clone https://github.com/drumil1602/Rate-Limiting-POC.git
-   cd your-repo
+   cd in-memory-rate-limiting
    docker-compose up
 ## Usage
 
