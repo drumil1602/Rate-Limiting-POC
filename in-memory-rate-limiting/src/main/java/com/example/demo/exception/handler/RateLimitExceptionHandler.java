@@ -9,7 +9,6 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -17,9 +16,10 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class RateLimitExceptionHandler {
     private static final Logger LOG = LoggerFactory.getLogger(RateLimitExceptionHandler.class);
+
     @ExceptionHandler(RateLimitException.class)
-    public ResponseEntity<ApiErrorMessage>
-    handleInvalidFieldsInValidJson(final RateLimitException rateLimitException, final HttpServletRequest request) {
+    public ResponseEntity<ApiErrorMessage> handleInvalidFieldsInValidJson(final RateLimitException rateLimitException,
+            final HttpServletRequest request) {
         final ApiErrorMessage apiErrorMessage = rateLimitException.toApiErrorMessage(request.getRequestURI());
         logIncomingCallException(rateLimitException, apiErrorMessage);
         return new ResponseEntity<>(apiErrorMessage, HttpStatus.TOO_MANY_REQUESTS);
